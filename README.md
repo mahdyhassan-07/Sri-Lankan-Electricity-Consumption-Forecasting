@@ -1,12 +1,14 @@
 # Sri Lankan Household Electricity Consumption Forecasting
 
-This project, developed for the Artificial Intelligence and Machine Learning (IT2011) module at SLIIT, focuses on building a machine learning model to forecast household net energy import based on smart meter data.
+This project, developed for the Artificial Intelligence and Machine Learning (IT2011) module at SLIIT, focuses on building a machine learning model to forecast household net energy import using smart meter data.
 
 ## 🎯 Project Goal
-The primary objective was to develop a reliable regression model to predict `NET_IMPORT_kWh` while navigating real-world data challenges like data leakage. The final model uses a LightGBM Regressor.
+The primary objective was to develop a reliable regression model to predict NET_IMPORT_kWh, while addressing real-world challenges like data leakage and feature correlation.
+The final optimized model uses a LightGBM Regressor.
 
 ## 📊 Dataset
-The project utilizes the [Sri Lankan Residential Electricity Consumption dataset](https://www.kaggle.com/datasets/lirneasia/sri-lankan-residential-electricity-consumption) from Kaggle, provided by LIRNEasia.
+The dataset used is the Sri Lankan Residential Electricity Consumption Dataset provided by LIRNEasia, available on Kaggle.
+It contains millions of smart meter readings, including voltage, current, energy imports/exports, and timestamps from multiple households.
 
 ## 🛠️ Methodology
 
@@ -31,3 +33,16 @@ The final feature importance plot confirms that the model uses logical predictor
 
 ## 🧑‍💻 My Role
 Developed and tuned the LightGBM Regressor, and was responsible for identifying and resolving the critical data leakage issue that affected the initial models.
+
+## 🧰 Tech Stack
+Languages & Libraries: Python, Pandas, NumPy, Scikit-learn, LightGBM, Matplotlib, Seaborn
+Tools: Jupyter Notebook, Google Colab, Kaggle
+
+## 📚 Key Learnings
+How to detect and fix data leakage in ML pipelines.
+The importance of realistic evaluation — high R² ≠ good model if leakage exists.
+Interpreting model behavior through feature importance and domain logic.
+
+## 🏆 Acknowledgment
+This project was completed as part of SLIIT’s IT2011 – Artificial Intelligence and Machine Learning module.
+Special thanks to LIRNEasia for providing the dataset and to my team for collaboration and support.
